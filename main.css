@@ -1,0 +1,100 @@
+* { /* reset com font customizada*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Roboto', sans-serif;
+}
+
+body { /* colocando a cor de fundo e um padding de 100px em cima do body*/
+    background-color: #E7E7E7;
+    padding-top: 100px;
+}
+
+header { /* Display flex no header para as tags ficarem lado a lado*/
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;  /* margem em baixo para espaçar o header do form*/
+
+}
+
+header img { /* ajustando o tamanho da imagem do header com height e espçando ela do título*/
+    height: 36px;
+    margin-right: 16px;
+}
+
+header h1 { /* aumentando o tamanho da fonte do titulo e a colocando em negrito*/
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.container { /* Limitando o tamanho da div container em 960px e fazendo ela ocupar esse espaço*/
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto; /* margem de 0 em cima e em baixo e automatica para preencher a tela nas laterais*/
+}
+
+form { 
+    display: flex; /* alinhando os itens do form com o display: flex */
+    max-width: 640px; 
+    width: 100%;
+    justify-content: space-between; /* espaçando eles com os espaços entre eles*/
+    margin-bottom: 56px;
+}
+
+form input { /* estilizando as caixas de input*/
+    font-size: 24px;
+    background-color: white;
+    border: none;
+    border-bottom: 2px solid #000;
+    padding: 8px;
+}
+
+form button { /* estilizando o botão*/
+    background-color: #009432;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+}
+
+table { /* fazendo a tabela ocupar toda área do container*/
+    width: 100%;
+}
+
+table th {
+    border-bottom: 2px solid black;
+    padding: 16px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Para removermos a separação natural das celulas da tabela temos que usar o cellspacing = "0" no html */
+
+table td {
+    padding: 16px 0; /* padding só na parte de cima e baixo (0 dos lados) */
+    text-align: center; /* alinhando o texto das colunas da tabela para o centro de cada coluna da tabela*/
+    font-size: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+table td img { /* limitando tamanho das imagens nas colunas da tabela*/
+    height: 30px;
+}
+
+.resultado { /* estilizando a mensagem do resultado*/
+    padding: 8px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #000;
+    border-radius: 3px;
+}
+
+.aprovado { /* cor da mensagem caso aprovado*/
+    background-color: #009432;
+}
+
+.reprovado { /* cor da mensagem caso reprovado*/
+    background-color: red;
+}
