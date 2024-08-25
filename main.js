@@ -52,7 +52,7 @@ function atualizaTabela() {
 function atualizaMediaFinal() {
     const mediaFinal = calculaMediaFinal();
 
-    document.getElementById('media-final-valor').innerHTML = mediaFinal; //escreve o valor da média final no html
+    document.getElementById('media-final-valor').innerHTML = mediaFinal.toFixed(2); //escreve o valor da média final no html e limita as casas decimais para 2
     document.getElementById('media-final-resultado').innerHTML = mediaFinal >= notaMinima ? spanAprovado : spanReprovado; //se a média final for igual ou maior que 7, o script irá escrever aprovado, caso contrário reprovado
 }
 
